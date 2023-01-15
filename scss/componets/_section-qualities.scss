@@ -1,0 +1,40 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.qualities {
+  display: flex;
+  gap: 30px;
+}
+
+.qualities__svg {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $textSection;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.qualities__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $textColor;
+}
+
+.qualities__text {
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}

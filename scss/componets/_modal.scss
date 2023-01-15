@@ -1,0 +1,222 @@
+/*--модальне вікно--*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  max-height: 90vh;
+  background-color: $textWhiteColor;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: $textWhiteColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__close-svg {
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__btn-close:hover &,
+  .modal__btn-close:focus & {
+    fill: $textHoverColor;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  display: block;
+  margin-bottom: 4px;
+  color: #757575;
+}
+
+.modal__input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $textHoverColor;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__input:hover + &,
+  .modal__input:focus + & {
+    fill: $textHoverColor;
+  }
+}
+
+// .form-field-input:focus+.form-field-icon {
+//     fill:  $textHoverColor;
+// }
+
+.modal__textarea {
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $textHoverColor;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.contract {
+  color: $textHoverColor;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.modal__checkbox {
+  margin-bottom: 30px;
+  margin-left: 12px;
+  color: #757575;
+}
+
+.checkbox__input {
+  appearance: none;
+}
+
+.checkbox__lable {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 20px;
+}
+
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  margin: 4px 8px 0 0;
+  fill: transparent;
+  border: 2px solid $textColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  .checkbox__input:checked + & {
+    fill: $textWhiteColor;
+    background-color: $textHoverColor;
+    border-color: $textHoverColor;
+  }
+}
+
+.modal__btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  color: $textWhiteColor;
+  background-color: $textHoverColor;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+// .mail-form {
+//     margin-top: 20px;
+//     display: flex;
+// }
+
+// .input__btn {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .icon-send {
+//     margin-left: 10px;
+//     fill:  $textWhiteColor;
+// }

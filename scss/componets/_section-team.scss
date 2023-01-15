@@ -1,0 +1,105 @@
+/*--наша команда--*/
+
+.team {
+  background: $textSection;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $textColor;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+}
+
+.team__item {
+  padding-bottom: 30px;
+  background-color: white;
+  background: $textWhiteColor;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $textColor;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.socials {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $textWhiteColor;
+    background-color: $textHoverColor;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+// .ourtaem-soc-link {
+//     width: 20px;
+//     height: 20px;
+//     align-items: center;
+//     fill: currentColor;
+// }
+
+// .container-soc-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-decoration: none;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     color: #afb1b8;
+// }
+
+// .section-team {
+//     background: $textSection;
+//     padding-bottom: 94px;
+// }
