@@ -1,6 +1,15 @@
+
+
 .work {
+  display: none;
   padding-top: 0px;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__caption {
@@ -39,26 +48,3 @@
   width: calc((100% - 60px) / 3);
   position: relative;
 }
-
-// .work-list {
-//     display: flex;
-// }
-
-// .work-list {
-//     gap: 30px;
-// }
-
-// .list-works {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
-// }
-
-// .item-works {
-//     width: calc((100% - 60px) / 3);
-// }
-
-// .item {
-//     width: 44px;
-//     height: 44px;
-// }

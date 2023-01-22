@@ -1,12 +1,12 @@
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    color: $textColor;
+  font-family: Roboto, sans-serif;
+  color: $textColor;
 }
 
 h1,
@@ -16,57 +16,47 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-// .link {
-//     text-decoration: none;
-//     font-family: "Roboto";
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.02em;
-
-//     color: #757575;;
-// }
-
-// .link:hover,
-// .link:focus {
-//     color: $textHoverColor;
-//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// }
-
-// .ul {
-//     margin-top: 94px;
-//     padding-left: 0px;
-//     margin: 0px;
-//     padding: 0px;
-//     list-style: none;
-// }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
