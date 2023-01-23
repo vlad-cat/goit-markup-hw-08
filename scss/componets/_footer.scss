@@ -23,6 +23,10 @@
 
 /*--футер адрес--*/
 
+.footer-address {
+  margin-bottom: 60px;
+}
+
 .footer-contacts__list {
   display: flex;
   flex-direction: column;
@@ -48,7 +52,7 @@
   letter-spacing: 0.03em;
   color: $textWhiteColor;
   text-decoration: none;
- @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     text-align: center;
   }
 }
@@ -72,7 +76,6 @@
 
 .footer-contacts__tel {
   display: block;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -221,8 +224,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
   .footer-form__email {
     max-width: 450px;
@@ -230,6 +231,7 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-form__email {
+    margin-bottom: unset;
     max-width: 358px;
   }
 }
